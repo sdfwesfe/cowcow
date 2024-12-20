@@ -9,3 +9,8 @@ paths.txt作用： 填入xxx/xx/等路径，一行一个
 concat.txt会保存拼接好的完整url
 
 注意： 填入url和path的时候不要留空格
+
+
+
+命令行采用傻瓜式运行：
+python cowcow.py
