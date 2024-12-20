@@ -24,6 +24,7 @@ _/ ___\/  _ \ \/ \/ / _/ ___\/  _ \ \/ \/ /
 \  \__(  <_> )     /  \  \__(  <_> )     / 
  \___  >____/ \/\_/    \___  >____/ \/\_/  
      \/                    \/              
+                        created by "小白鱼"
 """
 print(banner)
 
@@ -272,7 +273,7 @@ def request_url(concat_url):
                     match_keywords = [keyword for keyword in keywords if keyword in content1 or keyword in content2]
                     with open(keyword_file, 'a', encoding='utf-8') as f:
                         f.write(f"URL: {concat_url} 匹配到的关键词: {', '.join(match_keywords)}\n")
-                    print(Fore.GREEN + f"[匹配成功] {concat_url} 匹配到关键词: {', '.join(match_keywords)}")
+                    print(Fore.GREEN + f"[匹配成功] {concat_url} 匹配到关键词: {', '.join(match_keywords)}"+ Style.RESET_ALL)
                     ## 匹配关键词
                     break  # 成功后退出 X-Forwarded-For 尝试循环
                 else:
